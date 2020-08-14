@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.eachnew {
+    margin-bottom: 20px;
+}
+
+.content_new {
+    width: 500px;
+    height: 76px;
+    overflow: hidden;
+}
+
+.noidung {
+    margin-left: 20px;
+}
+
+.main_content {
+    display: flex;
+}
+
+img {
+    width: 100%;
+}
+
+.anh {
+    width: 180px;
+    height: 120px;
+}
+
+img.logo {
+    width: 80%;
+}
+
+span.titlenew {
+    font-size: 38px;
+    /* margin-left: 45px; */
+}
+.titlenew{
+    font-family: Brush Script MT;
+}
+
+.content_of_new{
+    height: 230px;
+}

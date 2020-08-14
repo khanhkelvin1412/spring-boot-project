@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Edit New</title>
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css" th:href="@{bootstrap.min.css}"/>
+    <link type="text/css" rel="stylesheet" href="style.css" th:href="@{style.css}"/>
+</head>
+<body>
+<div class="col-3">
+
+</div>
+<div class="container col-6">
+    <h1>Edit New</h1>
+    <form th:object="${post}" th:action="@{/save}" method="post">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label th:text="Title" th:for="name"></label>
+            <input type="text" th:field="*{title}" class="form-control"/>
+        </div>
+        <div style="clear: both; display: block; height: 10px"></div>
+        <div>
+            <label th:text="Content" th:for="email"></label>
+<!--            <input type="text" th:field="*{content}" class="form-control"/>-->
+            <textarea th:field="*{content}" class="form-control" id="content_of_new"></textarea>
+        </div>
+        <div style="clear: both; display: block; height: 10px"></div>
+        <div>
+            <label th:text="ShortDescription" th:for="phone"></label>
+            <input type="text" th:field="*{shortDescription}" class="form-control"/>
+        </div>
+        <div style="clear: both; display: block; height: 10px"></div>
+        <div>
+            <label th:text="CategoryCode" th:for="phone"></label>
+            <input type="text" th:field="*{categoryCode}" class="form-control"/>
+        </div>
+
+        <div style="clear: both; display: block; height: 10px"></div>
+        <input type="submit" class="btn btn-success" value="Save"/>
+    </form>
+</div>
+</body>
+</html>
